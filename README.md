@@ -1,6 +1,6 @@
 # Semester-Project-2
 
-![image](https://github.com/sustrrr/JavaScript-2-CA/blob/main/img/JavaScript-2-CA.jpg)
+![image]https://github.com/sustrrr/Semester-Project-2/blob/main/img/Semester-Project-2.jpg
 
 A simple overview of the use/purpose of the project.
 
