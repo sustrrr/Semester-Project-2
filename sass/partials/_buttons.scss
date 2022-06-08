@@ -1,0 +1,47 @@
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+#logout {
+  color: white;
+  border: 0.1vw solid white;
+  padding: 0.5vw;
+  background-color: rgba(94, 86, 86, 0.25);
+
+  ion-icon {
+    vertical-align: middle;
+    padding: 0;
+  }
+
+  .text {
+    vertical-align: middle;
+  }
+}
+
+.product-button {
+  @include custombutton;
+}
+
+.cartbutton {
+  @include custombutton;
+}
+
+.my-custom-button {
+  @include custombutton;
+  background-color: #383838;
+  border: 0.1vw solid rgb(255, 255, 255);
+
+  &:focus {
+    background-color: #383838;
+    border: 0.1vw solid rgb(255, 255, 255);
+
+    &:hover {
+      color: white;
+    }
+  }
+}

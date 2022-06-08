@@ -1,0 +1,42 @@
+.details {
+  margin-top: 5vh;
+  .container-flex {
+    @include containerflex;
+    column-gap: 20vh;
+    row-gap: 20vh;
+
+    @media (max-width: $tabletPRO-width) {
+      column-gap: 5vh;
+      row-gap: 5vh;
+    }
+    @media (max-width: $tablet-width) {
+      flex-direction: column;
+      column-gap: 5vh;
+      row-gap: 5vh;
+      text-align: center;
+    }
+    .item {
+      flex: 1;
+
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+
+      p {
+        line-height: 2.7em;
+      }
+    }
+
+    .detailsprice {
+      margin-bottom: 2em;
+      margin-top: 2em;
+    }
+
+    .price {
+      font-family: $font-special;
+      font-size: 1.5em;
+      color: green;
+    }
+  }
+}

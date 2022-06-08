@@ -1,0 +1,105 @@
+nav {
+  @include footernavcolor;
+  display: inline-block;
+  width: 100%;
+  z-index: 3;
+  position: relative;
+
+  a {
+    color: white;
+    padding: 1vw;
+    &:focus {
+      background-color: rgba(0, 0, 0, 0.456);
+    }
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.456);
+    }
+  }
+
+  ion-icon {
+    font-size: 1.4em;
+    padding: 0.5vw 2vw 0.5vw 2vw;
+    &:first-child {
+      padding-right: 0.5em;
+    }
+
+    &:last-child {
+      padding-left: 0.5em;
+    }
+  }
+
+  .sidemenu {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (max-width: $tablet-width) {
+    display: inline-block;
+  }
+}
+
+////// js menu
+.jsmenu {
+  display: flex;
+  width: 100%;
+
+  .hide {
+    display: inline-block;
+    @media (max-width: $tablet-width) {
+      display: none;
+    }
+  }
+}
+
+///////burger menu
+
+/////designed for ipad first
+.burger {
+  display: none;
+
+  @media (max-width: $tablet-width) {
+    display: inline-block;
+  }
+
+  .burgermenu {
+    display: none;
+    background-color: getColour(secondary);
+    width: 100%;
+    height: 110vh;
+    text-align: center;
+    z-index: -1;
+    line-height: 17vw;
+    position: relative;
+    top: 5vw;
+    left: 0vw;
+
+    @media (max-width: $mobile-width) {
+      line-height: 20vh;
+    }
+
+    a {
+      padding: 3vh 20vh;
+      &:focus {
+        background-color: white;
+        color: black;
+      }
+    }
+  }
+
+  .fa-bars {
+    color: white;
+    padding-left: 5vw;
+    font-size: 1.5em;
+  }
+
+  #hamburger-menu {
+    display: none;
+  }
+
+  #hamburger-menu:checked ~ .burgermenu {
+    position: absolute;
+    display: inline-block;
+  }
+}

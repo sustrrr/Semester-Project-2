@@ -1,0 +1,70 @@
+footer {
+  flex-shrink: 0;
+  width: 100%;
+  display: inline-block;
+
+  ion-icon {
+    font-size: 1.5em;
+  }
+
+  .container {
+    max-width: 100%;
+    @extend .container-flex;
+    @extend .flex-column;
+  }
+
+  .firststrip {
+    width: 100%;
+    background-color: getColour(grey);
+    padding: 1.3em;
+
+    ul {
+      display: flex;
+      justify-content: space-between;
+      width: 70%;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      @media (max-width: $tablet-width) {
+        flex-direction: column;
+        line-height: 15vw;
+      }
+    }
+    li {
+      display: inline-block;
+      flex: 0 1 auto;
+      padding: 7vw 0vw;
+    }
+  }
+
+  .secondstrip {
+    width: 100%;
+    @include footernavcolor;
+    color: white;
+    text-align: center;
+    padding: 1.3em;
+  }
+
+  .thirdstrip {
+    text-align: center;
+
+    .sitemap {
+      a {
+        display: block;
+        padding: 6vh 10vh;
+        @include darkhover;
+      }
+    }
+
+    .nav-brand {
+      padding: 5vh 7vh;
+      font-size: 1.4em;
+    }
+
+    ion-icon {
+      padding: 4vh 20vh;
+
+      @include darkhover;
+    }
+  }
+}

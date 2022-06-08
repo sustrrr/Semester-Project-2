@@ -1,0 +1,64 @@
+h1 {
+  font-family: $font-heading-one;
+}
+
+h2 {
+  font-family: $font-heading-two;
+}
+
+p {
+  font-family: $font-primary;
+}
+
+.nav-brand {
+  font-family: $font-special;
+  text-transform: uppercase;
+  font-size: 1.2em;
+}
+
+///////
+
+h1 {
+  font-size: 1.6em;
+}
+
+h2 {
+  margin-top: 1.2em;
+}
+
+p {
+  font-size: 1em;
+  line-height: 3.7vh;
+}
+
+a {
+  font-size: 1em;
+  text-decoration: none;
+  color: black;
+}
+
+//////
+
+ul {
+  list-style: none;
+  margin: none;
+  padding: 0;
+}
+
+li {
+  margin: none;
+}
+
+ion-icon {
+  font-size: 1.2em;
+}
+
+/// break
+
+@media (max-width: $tablet-width) {
+  p,
+  h1,
+  h2 {
+    text-align: center;
+  }
+}

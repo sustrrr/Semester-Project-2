@@ -1,0 +1,33 @@
+.hero {
+  position: relative;
+  bottom: 10vh;
+
+  .heroimage {
+    position: relative;
+    overflow: hidden;
+    height: 70vh;
+  }
+
+  .herotext {
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+
+    h1 {
+      font-family: $font-special;
+      padding-bottom: 5vh;
+    }
+
+    ul {
+      li {
+        display: inline-block;
+        text-transform: uppercase;
+        padding: 0vw 4vw;
+
+        .line {
+          border: #ffc465 solid 5px;
+        }
+      }
+    }
+  }
+}

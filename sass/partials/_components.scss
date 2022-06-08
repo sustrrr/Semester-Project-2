@@ -1,0 +1,89 @@
+.sitetitle {
+  margin-top: 7vh;
+  margin-bottom: 3vh;
+}
+
+.sitetitleforms {
+  text-align: left;
+  margin-top: 10vh;
+  margin-bottom: 3vh;
+
+  @media (max-width: $tablet-width) {
+    margin-top: 7vh;
+  }
+}
+
+.accent {
+  color: getColour(accent);
+}
+
+.hide {
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.breadcrumb {
+  text-align: center;
+  letter-spacing: 0.1em;
+  font-size: 0.7em;
+  ul li {
+    display: inline-block;
+    text-transform: uppercase;
+    color: rgb(122, 122, 122);
+  }
+
+  a {
+    &:after {
+      content: " /";
+      padding: 1em;
+    }
+  }
+}
+
+.left {
+  text-align: left;
+
+  @media (max-width: $tablet-width) {
+    text-align: center;
+  }
+}
+
+.imagecards {
+  margin-bottom: 15vw;
+  margin-top: 20vw;
+  text-align: center;
+
+  &:hover {
+    text-decoration: underline;
+    letter-spacing: 0.1em;
+  }
+
+  .cardimg {
+    width: 75%;
+    margin: 0 auto;
+
+    @media (max-width: $tablet-width) {
+      width: 90%;
+    }
+
+    img {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+  .cardimgtext {
+    text-transform: uppercase;
+    position: relative;
+    color: rgb(66, 66, 66);
+
+    p {
+      font-family: $font-heading-two;
+      font-size: 2em;
+    }
+
+    ion-icon {
+      font-size: 2em;
+    }
+  }
+}

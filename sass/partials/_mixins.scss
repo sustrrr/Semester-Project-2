@@ -1,0 +1,56 @@
+@mixin containerflex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  align-items: stretch;
+}
+
+@mixin footernavcolor {
+  background-color: getColour(secondary);
+  border-bottom: 0.1vw solid getColour(accent);
+}
+
+@mixin custombutton {
+  font-family: "unica one";
+  text-transform: uppercase;
+  padding: 1em 10em;
+  margin-bottom: 5vw;
+  margin-top: 5em;
+  letter-spacing: 0.1vw;
+  background-color: getColour(secondary);
+  color: white;
+  border-radius: 1vw;
+
+  @media (max-width: $mobile-width) {
+    padding: 1em 5em;
+  }
+
+  &:hover {
+    background-color: white;
+    border: 0.1vw solid black;
+    color: black;
+  }
+
+  &:focus {
+    background-color: green;
+    border: 0vw solid black;
+
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+@mixin darkhover {
+  &:hover {
+    color: white;
+    background-color: getColour(secondary);
+  }
+
+  &:focus {
+    color: white;
+    background-color: getColour(secondary);
+  }
+}
