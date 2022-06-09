@@ -6,17 +6,37 @@ A simple overview of the use/purpose of the project.
 
 ## Description
 
-Add a more detailed description of what your project entails and set out to do.
+This is an e-commerce website, where the user can buy shoes. It uses Straps API.
 
-You can add some bullet points if you'd like to:
+The website has the following path/pages:
 
-- List item 1
-- List item 2
-- List item 3
+- home
+- contact
+- products
+- product detail
+- cart
+
+- login 
+ 	- add products
+ 	- edit products
+
+This website has pages for customers and pages for admins.
+
+The website displayes the user can buy.
+Different products (shoes) gets displayed (title, price, image), and when clicking on it, you will get more information about it (title, description, image, price, add to card button). 
+
+The website has a search function (filtering), so only products that the searched text matches will get listed.
+
+If you buy the product, it will go to the cart page, and the product title, price, image gets displayed. If user clicks on the product inside the cart page, they will come back to the product view page.
+
+An admin with the correct username, password and email can login to the site, and edit existing products, and also add new products to the site.-
+Admin can choose the product title, description, price, image and if the product is featured or not when creating a new product.
+
+The page has a contact form, and the input needs to be validated before the form gets sent. This form will not be sent to any API however.
 
 ## Built With
 
-- css
+- sass
 - html
 - javascript
 
@@ -32,21 +52,14 @@ This is where you list how to get the project started. It typically just include
 git clone (https://github.com/sustrrr/JavaScript-2-CA.git)
 ```
 
-2. Install the dependencies:
-
-```
-npm install
-```
-
 ### Display website
 
 ```
 Open With Live server
 ```
 
-## Contributing
+Website: https://safe-dusk-00089.herokuapp.com/index.html
 
-Here you can detail any information you want to provide regarding contributing to the project. For big projects you will usually have a separate `CONTRIBUTING.md` and link to it, but for smaller projects you can simply include instructions here. These instructions can simply detail the process you want a person to take, such as to make sure to open a pull request so code can be reviewed.
 
 ## Contact
 
