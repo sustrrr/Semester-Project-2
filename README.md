@@ -61,9 +61,11 @@ Open With Live server
 Website: https://safe-dusk-00089.herokuapp.com/index.html
 
 
+## Contributing
+Open a pull request so the code can be reviewed and discussed
+
 ## Contact
-
-
+--
 
 ## License
 
